@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Eveleth';
+    src: url(assets/fonts/eveleth-clear-regular.otf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Eveleth;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background: #191a1c;
+    background-size: contain;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #282a2f;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px, 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #222326;
+    color: white;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 240px;
+    background: #222326;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .navbar ul li ul li a {
+    font-size: 16px;
+}
+
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.logo {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+@media(max-width: 700px) {
+
+    .logo {
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 140px;
+        height: 52px;
+    }
+
+    header label {
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #282a2f;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #191a1c;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+}
