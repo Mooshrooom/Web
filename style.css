@@ -163,12 +163,50 @@ header label {
 
     .project_element {
         margin: 20px;
-        height: 425px;
-        width: 400px;
+        height: 115px;
+        width: 100px;
         margin-top: 70px;
         margin-left: 25px;
         overflow: hidden;
         box-shadow: gray 0px 0px 30px -10px;
+    }
+
+    .boxer_image {
+        width: 100px;
+        height: 80px;
+    }
+
+    .mooshcloud_image {
+        width: 100px;
+        height: 80px;
+    }
+
+    .boxer_title {
+        color: gold;
+        font-size: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mooshcloud_title {
+        color: gold;
+        font-size: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .boxer_desc {
+        color: white;
+        font-size: 4px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mooshcloud_desc {
+        color: white;
+        font-size: 4px;
+        justify-content: center;
+        text-align: center;
     }
 
     .logo {
